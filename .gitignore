@@ -3,30 +3,23 @@ build/
 build-*/
 xcode-build/
 
-# Xcode generated files
-*.xcodeproj/xcuserdata/
-*.xcodeproj/project.xcworkspace/xcuserdata/
-*.xcworkspace/xcuserdata/
-*.pbxuser
-*.mode1v3
-*.mode2v3
-*.perspectivev3
-DerivedData/
-
 # CMake generated files
 CMakeCache.txt
 CMakeFiles/
+CMakeScripts/
 cmake_install.cmake
 Makefile
 compile_commands.json
 
+# Xcode generated files (entire .xcodeproj except the main project file structure)
+*.xcodeproj/xcuserdata/
+*.xcodeproj/project.xcworkspace/
+*.xcworkspace/xcuserdata/
+# Or ignore entire generated xcodeproj since we can regenerate it:
+DataStructures-Interview-Prep.xcodeproj/
+
 # VSCode settings (optional - you might want to keep some)
 .vscode/
-# Or keep shared settings and ignore user-specific ones:
-# .vscode/settings.json
-# .vscode/launch.json
-# .vscode/tasks.json
-# !.vscode/extensions.json
 
 # Compiled binaries
 *.exe
@@ -38,11 +31,6 @@ test-*
 # System files
 .DS_Store
 Thumbs.db
-
-# IDE files
-*.swp
-*.swo
-*~
 
 # Debug files
 *.dSYM/
