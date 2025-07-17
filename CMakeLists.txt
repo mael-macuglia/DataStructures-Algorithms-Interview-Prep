@@ -15,12 +15,22 @@ add_executable(test-LinkedList
     src/linear/LinkedList/LinkedList.cpp
     src/linear/LinkedList/Node.cpp
 )
+# Create executable for Hashing test
+add_executable(test-Hashing
+    Playground/test-Hashing.cpp
+    src/hashing/chaining.cpp
+    src/hashing/chaining.hpp
+)
 
-# Add include directories for LinkedList
+#  include directories for LinkedList
 target_include_directories(test-LinkedList PRIVATE 
     src
     src/linear/LinkedList
     src/hashing
+)
+# Add include directories so you can use 
+target_include_directories(test-Hashing PRIVATE 
+    src/hashing/chaining
 )
 
 # Numerical essentials executables
